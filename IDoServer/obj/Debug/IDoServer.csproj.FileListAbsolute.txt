@@ -1,0 +1,16 @@
+C:\Users\Lixiaodong\Desktop\222\InterestingDoing\IDoServer\bin\Debug\IDoServer.exe.config
+C:\Users\Lixiaodong\Desktop\222\InterestingDoing\IDoServer\bin\Debug\IDoServer.exe
+C:\Users\Lixiaodong\Desktop\222\InterestingDoing\IDoServer\bin\Debug\IDoServer.pdb
+C:\Users\Lixiaodong\Desktop\222\InterestingDoing\IDoServer\obj\Debug\IDoServer.csprojResolveAssemblyReference.cache
+C:\Users\Lixiaodong\Desktop\222\InterestingDoing\IDoServer\obj\Debug\IDoServer.exe
+C:\Users\Lixiaodong\Desktop\222\InterestingDoing\IDoServer\obj\Debug\IDoServer.pdb
+C:\Users\Lixiaodong\Desktop\222\InterestingDoing\IDoServer\bin\Debug\Helpers.dll
+C:\Users\Lixiaodong\Desktop\222\InterestingDoing\IDoServer\bin\Debug\Helpers.pdb
+C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoServer\bin\Debug\IDoServer.exe.config
+C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoServer\obj\Debug\IDoServer.exe
+C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoServer\obj\Debug\IDoServer.pdb
+C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoServer\bin\Debug\IDoServer.exe
+C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoServer\bin\Debug\IDoServer.pdb
+C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoServer\bin\Debug\Helpers.dll
+C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoServer\bin\Debug\Helpers.pdb
+C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoServer\obj\Debug\IDoServer.csprojResolveAssemblyReference.cache

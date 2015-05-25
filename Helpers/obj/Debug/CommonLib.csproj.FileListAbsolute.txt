@@ -1,0 +1,10 @@
+C:\Users\Lixiaodong\Desktop\222\InterestingDoing\Helpers\bin\Debug\Helpers.dll
+C:\Users\Lixiaodong\Desktop\222\InterestingDoing\Helpers\bin\Debug\Helpers.pdb
+C:\Users\Lixiaodong\Desktop\222\InterestingDoing\Helpers\obj\Debug\CommonLib.csprojResolveAssemblyReference.cache
+C:\Users\Lixiaodong\Desktop\222\InterestingDoing\Helpers\obj\Debug\Helpers.dll
+C:\Users\Lixiaodong\Desktop\222\InterestingDoing\Helpers\obj\Debug\Helpers.pdb
+C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\Helpers\bin\Debug\Helpers.dll
+C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\Helpers\bin\Debug\Helpers.pdb
+C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\Helpers\obj\Debug\CommonLib.csprojResolveAssemblyReference.cache
+C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\Helpers\obj\Debug\Helpers.dll
+C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\Helpers\obj\Debug\Helpers.pdb
