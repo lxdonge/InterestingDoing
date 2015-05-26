@@ -19,8 +19,22 @@ namespace IDoClient.ClientServer
 
         public ClientCommunicationSrvr() {
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+
+            bind:
             IPEndPoint ipep = new IPEndPoint(IPAddress.Any, CommonLib.GloableVariable.Globle.clientUdpPort);
-            socket.Bind(ipep);
+           try
+            {
+                socket.Bind(ipep);
+           }
+           catch (System.Net.Sockets.SocketException e)
+           {
+               Console.WriteLine("绑定套接字异常" + e.ToString());
+               CommonLib.GloableVariable.Globle.clientUdpPort += 1;
+               if (CommonLib.GloableVariable.Globle.clientUdpPort >= 9520)
+                   throw e;
+               goto bind;
+
+          }
         }
 
         public   void ClientCommunicationUdpListen() {
