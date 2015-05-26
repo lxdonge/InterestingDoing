@@ -22,3 +22,11 @@ C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoClient\bin\Debug\Helpers.p
 C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoClient\obj\Debug\IDoClient.csprojResolveAssemblyReference.cache
 C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoClient\obj\Debug\IDoClient.exe
 C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoClient\obj\Debug\IDoClient.pdb
+D:\test\mytest\InterestingDoing\IDoClient\bin\Debug\IDoClient.exe.config
+D:\test\mytest\InterestingDoing\IDoClient\bin\Debug\IDoClient.exe
+D:\test\mytest\InterestingDoing\IDoClient\bin\Debug\IDoClient.pdb
+D:\test\mytest\InterestingDoing\IDoClient\bin\Debug\Helpers.dll
+D:\test\mytest\InterestingDoing\IDoClient\bin\Debug\Helpers.pdb
+D:\test\mytest\InterestingDoing\IDoClient\obj\Debug\IDoClient.csprojResolveAssemblyReference.cache
+D:\test\mytest\InterestingDoing\IDoClient\obj\Debug\IDoClient.exe
+D:\test\mytest\InterestingDoing\IDoClient\obj\Debug\IDoClient.pdb

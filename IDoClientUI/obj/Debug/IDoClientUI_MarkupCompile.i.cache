@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoClientUI\obj\Debug\
+D:\test\mytest\InterestingDoing\IDoClientUI\obj\Debug\
 IDoClientUI
 none
 false
 DEBUG;TRACE
-C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoClientUI\App.xaml
+D:\test\mytest\InterestingDoing\IDoClientUI\App.xaml
 4340356748
 
-132085574651
-161046310846
+13851017103
+16423690420
 Dialogs\ChatForm.xaml;Dialogs\UserListForm.xaml;MainWindow.xaml;Register.xaml;
 
 False

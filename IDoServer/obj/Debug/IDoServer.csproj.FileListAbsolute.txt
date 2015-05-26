@@ -14,3 +14,11 @@ C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoServer\bin\Debug\IDoServer
 C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoServer\bin\Debug\Helpers.dll
 C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoServer\bin\Debug\Helpers.pdb
 C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\IDoServer\obj\Debug\IDoServer.csprojResolveAssemblyReference.cache
+D:\test\mytest\InterestingDoing\IDoServer\bin\Debug\IDoServer.exe.config
+D:\test\mytest\InterestingDoing\IDoServer\obj\Debug\IDoServer.exe
+D:\test\mytest\InterestingDoing\IDoServer\obj\Debug\IDoServer.pdb
+D:\test\mytest\InterestingDoing\IDoServer\bin\Debug\IDoServer.exe
+D:\test\mytest\InterestingDoing\IDoServer\bin\Debug\IDoServer.pdb
+D:\test\mytest\InterestingDoing\IDoServer\bin\Debug\Helpers.dll
+D:\test\mytest\InterestingDoing\IDoServer\bin\Debug\Helpers.pdb
+D:\test\mytest\InterestingDoing\IDoServer\obj\Debug\IDoServer.csprojResolveAssemblyReference.cache

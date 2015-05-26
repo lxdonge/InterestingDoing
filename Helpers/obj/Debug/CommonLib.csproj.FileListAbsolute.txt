@@ -8,3 +8,8 @@ C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\Helpers\bin\Debug\Helpers.pdb
 C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\Helpers\obj\Debug\CommonLib.csprojResolveAssemblyReference.cache
 C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\Helpers\obj\Debug\Helpers.dll
 C:\Users\LixiaodongPC\Desktop\222\InterestingDoing\Helpers\obj\Debug\Helpers.pdb
+D:\test\mytest\InterestingDoing\Helpers\bin\Debug\Helpers.dll
+D:\test\mytest\InterestingDoing\Helpers\bin\Debug\Helpers.pdb
+D:\test\mytest\InterestingDoing\Helpers\obj\Debug\CommonLib.csprojResolveAssemblyReference.cache
+D:\test\mytest\InterestingDoing\Helpers\obj\Debug\Helpers.dll
+D:\test\mytest\InterestingDoing\Helpers\obj\Debug\Helpers.pdb
