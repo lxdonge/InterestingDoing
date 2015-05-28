@@ -27,14 +27,15 @@ namespace IDoClient.MainLogic
             set;
             get;
         }
-        public static void SetUserOnline(string username)
+        public static void SetUserOnline(string arg)
         {
+            string[] args = arg.Split('#');
             try
             {
                 int index = FriendsList.FindIndex(
                   delegate(UserInfo u)
                   {
-                      if (u.userName == username)
+                      if (u.userName == args[0])
                           return true;
                       else return false;
                   });
@@ -42,8 +43,12 @@ namespace IDoClient.MainLogic
                     FriendsList[index].IsOnline = "true";
                 else
                 {
-
-                    FriendsList.Add(new UserInfo(username));
+                    UserInfo u=new UserInfo(args[0]);
+                    u.IsOnline = "true";
+                    u.ip = args[1];
+                    u.port = args[2];
+                    
+                    FriendsList.Add(u);
                 }
             }
             catch (Exception e) { }

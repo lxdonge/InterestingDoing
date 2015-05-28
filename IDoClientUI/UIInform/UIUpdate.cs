@@ -28,6 +28,7 @@ namespace IDoClientUI.UIInform
                 MainWindow.UserlistFrm.UserList.ItemsSource = User.FriendsList;
                 MainWindow.UserlistFrm.MyName.Text = User.MyInfo.userName;
                 MainWindow.UserlistFrm.Show();
+              
             }));
         }
 
@@ -107,6 +108,7 @@ namespace IDoClientUI.UIInform
 
         public static void OnSomeOneOnline(string arg)
         {
+
             User.SetUserOnline(arg);
             Console.WriteLine(arg + "上线了");
 

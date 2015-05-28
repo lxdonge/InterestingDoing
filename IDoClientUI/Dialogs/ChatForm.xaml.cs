@@ -32,8 +32,14 @@ namespace IDoClientUI.Dialogs
 
         public ChatForm()
         {
+            AddHandler(Keyboard.KeyDownEvent, (KeyEventHandler)HandleKeyDownEvent);
             InitializeComponent();
+
         }
+
+      
+
+
         private void DragMove(object sender, MouseEventArgs e)
         {
             this.DragMove();
@@ -50,10 +56,21 @@ namespace IDoClientUI.Dialogs
 
         private void SendMsgClick(object sender, MouseButtonEventArgs e)
         {
+            DoSendMsg();
+        }
+
+        private void DoSendMsg()
+        {
             TextRange textRange = new TextRange(MyMsg.Document.ContentStart, MyMsg.Document.ContentEnd);
             // MessageBox.Show(textRange.Text);
 
+            if (textRange.Text.Length == 0)
+            {
+                MessageBox.Show("不能发送空消息", "提示");
+                return;
+            }
             MessageInfo _msg = new MessageInfo(User.MyInfo.userName, this.ChatWithWho.Text, textRange.Text, DateTime.Now.ToString());
+
             if (chatToPort != null && chatToIP != null)
             {
                 UserInfo uinfo = new UserInfo();
@@ -72,6 +89,19 @@ namespace IDoClientUI.Dialogs
                 Timer.Start();
             }
         }
+
+        private void HandleKeyDownEvent(object sender, KeyEventArgs e)
+        {
+
+            if ((e.Key == Key.Enter && (Keyboard.Modifiers & (ModifierKeys.Control)) == (ModifierKeys.Control)))
+            {
+                DoSendMsg();
+            }
+        }
+
+     
+
+
 
         System.Timers.Timer Timer = new System.Timers.Timer(); //从threadpool启动 private 
         private int count = 0;
@@ -114,8 +144,9 @@ namespace IDoClientUI.Dialogs
                        rangeOfText1.ApplyPropertyValue(TextElement.FontSizeProperty, "12");
                        TextRange rangeOfText2 = new TextRange(this.ChatMsgs.Document.ContentEnd, this.ChatMsgs.Document.ContentEnd);
                        rangeOfText2.Text = _msg.msg;
-                       rangeOfText2.ApplyPropertyValue(TextElement.FontSizeProperty, "14");
+                       rangeOfText2.ApplyPropertyValue(TextElement.FontSizeProperty, "14");             
                        this.ChatMsgs.ScrollToEnd();
+                       this.MyMsg.Document.Blocks.Clear();
                    }));
         }
     }

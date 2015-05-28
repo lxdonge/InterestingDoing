@@ -19,7 +19,7 @@ namespace CommonLib.Module
             this.userName = userName;
 
         }
-            
+      
         public UserInfo() { }
 
         public string IsOnline { set; get; }

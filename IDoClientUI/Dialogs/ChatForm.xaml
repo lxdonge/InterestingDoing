@@ -52,7 +52,7 @@
 
         <RichTextBox Name="ChatMsgs" VerticalScrollBarVisibility="Auto" Grid.Row="1" AcceptsReturn="True" BorderBrush="#2ECC71" FontSize="14" Block.LineHeight="2"  ></RichTextBox>
 
-        <RichTextBox Grid.Row="2"  Name="MyMsg"  AcceptsReturn="True" BorderBrush="#2ECC71" FontSize="14" Block.LineHeight="2"  ></RichTextBox>
+        <RichTextBox Grid.Row="2"   Name="MyMsg"  AcceptsReturn="True" BorderBrush="#2ECC71" FontSize="14" Block.LineHeight="2"  ></RichTextBox>
         <Canvas Grid.Row="3" Background="#2ECC71">
              <Button Content="发  送" PreviewMouseLeftButtonDown="SendMsgClick" Foreground="White"  Width="50" Height="26" Canvas.Left="446" Canvas.Top="9"/>
         </Canvas>

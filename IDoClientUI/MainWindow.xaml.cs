@@ -22,6 +22,7 @@ using IDoClientUI.Dialogs;
 using Helpers.Moduls;
 using IDoClientUI;
 
+
 namespace IDoingClientUI
 {
     /// <summary>
@@ -36,6 +37,9 @@ namespace IDoingClientUI
 
         public static Register RegisterFrm=null;
         public static UserListForm UserlistFrm = null;
+
+        private System.Windows.Forms.NotifyIcon notifyIcon;
+
         public MainWindow()
         {
             this.IsEnabledChanged += LoginWindow_IsEnabledChanged;  
@@ -56,9 +60,58 @@ namespace IDoingClientUI
             CommunicationUdpListen.Start();
             ChatWindows = new Dictionary<string, Window>();
 
+
             InitializeComponent();
             System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop(this);
+     
+            this.notifyIcon = new System.Windows.Forms.NotifyIcon();
+            this.notifyIcon.BalloonTipText = "IDO客户端";
+            this.notifyIcon.Text = "IDO客户端.";
+            this.notifyIcon.ShowBalloonTip(1000);
+            this.notifyIcon.Icon = new System.Drawing.Icon(@"default.ico");
+            this.notifyIcon.Visible = true;
+            
+            //打开菜单项
+        //    System.Windows.Forms.MenuItem open = new System.Windows.Forms.MenuItem("显示客户端");
+        //    open.Click += new EventHandler(Show);
+            //退出菜单项
+            System.Windows.Forms.MenuItem exit = new System.Windows.Forms.MenuItem("退出");
+            exit.Click += new EventHandler(Close);
+
+
+            //关联托盘控件
+            System.Windows.Forms.MenuItem[] childen = new System.Windows.Forms.MenuItem[] { exit };
+            notifyIcon.ContextMenu = new System.Windows.Forms.ContextMenu(childen);
+
+            this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler((o, e) =>
+            {
+                if (e.Button == System.Windows.Forms.MouseButtons.Left)
+                    this.Show(o, e);
+                  //  UserlistFrm.Show();
+            });
+   }
+        private void Show(object sender, EventArgs e)
+        {
+           // this.Visibility = System.Windows.Visibility.Visible;
+            if(UserlistFrm!=null)
+               UserlistFrm.Show();
+            this.ShowInTaskbar = true;
+            this.Activate();
         }
+
+        private void Hide(object sender, EventArgs e)
+        {
+            this.ShowInTaskbar = false;
+            this.Visibility = System.Windows.Visibility.Hidden;
+        }
+
+        private void Close(object sender, EventArgs e)
+        {
+            User.DoLogoff(User.MyInfo.userName);
+            Environment.Exit(0);
+        }
+
+
 
         private void LoginWindow_IsEnabledChanged(object sender, DependencyPropertyChangedEventArgs e)
         {

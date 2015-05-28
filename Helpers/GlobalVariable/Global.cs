@@ -12,7 +12,7 @@ namespace CommonLib.GloableVariable
 
         public static string appClientKey = "IDoingClient";
 
-        public static string serverAddress = "192.168.1.104";
+        public static string serverAddress = "172.20.58.172";
 
         public static int serverTcpPort = 9418;
 

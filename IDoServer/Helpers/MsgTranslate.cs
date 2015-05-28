@@ -49,7 +49,7 @@ namespace IDoServer
                                 msg.Extra = Validation.generateKey("allowConnect");
                                 DBBiz.User.SetUserOnlineInfo(index,clientInfo.IpAddress,clientInfo.Port);
                                 //broadcast login
-                                MsgModule bmsg = new MsgModule(InstructionSet.Instructions.SOMEONEONLIEN, clientInfo.Msg.msg1);
+                                MsgModule bmsg = new MsgModule(InstructionSet.Instructions.SOMEONEONLIEN, clientInfo.Msg.msg1+"#"+clientInfo.IpAddress+"#"+clientInfo.Port);
                                 foreach (UserInfo u in DBBiz.User.UserDB) {
                                     SendOrRcvInfo s = new SendOrRcvInfo(bmsg, u.ip, u.port);
                                     SocketHelper.StartUdpSendThread(s);

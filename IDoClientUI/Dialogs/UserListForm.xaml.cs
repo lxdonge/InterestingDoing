@@ -37,8 +37,8 @@ namespace IDoClientUI.Dialogs
 
         private void Close(object sender, MouseEventArgs e)
         {
-            User.DoLogoff(User.MyInfo.userName);
-            this.Close();
+
+            this.Hide();
             
         }
 
